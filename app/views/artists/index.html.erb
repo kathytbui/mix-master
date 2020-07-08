@@ -1,0 +1,19 @@
+<h1>All Artists</h1>
+
+<section class="">
+  <article class="">
+    <h2>All Artists</h2>
+    <p>
+      <ul>
+        <% @artists.each do |artist| %>
+        <li><%= artist.name %></li>
+        <li><%= image_tag(artist.image_path, alt: artist.name) %></li>
+        <li><%= link_to artist.name, "/artists/#{artist.id}" %></li>
+        <% end %>
+      </ul>
+    </p>
+    <p>
+      <%= link_to "New Artist", "/artists/new" %>
+    </p>
+  </article>
+</section>

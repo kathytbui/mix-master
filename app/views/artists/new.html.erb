@@ -1,0 +1,15 @@
+<section>
+  <article class="new-form">
+    <h1>Create a new Artist</h1>
+    <p>
+      <%= form_tag "/artists", method: :post do %>
+      <%= label_tag :name %>
+      <%= text_field_tag :name %>
+      <%= label_tag :image_path %>
+      <%= text_field_tag :image_path %>
+
+      <%= submit_tag "Create Artist" %> <%= button_to "Cancel", :back %>
+      <% end %>
+    </p>
+  </article>
+</section>
