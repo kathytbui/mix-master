@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/artists/:id', to: 'artists#show'
   get 'artists/:id/edit', to: 'artists#edit'
   post '/artists/:id', to: 'artists#update'
+  delete '/artists/:id/edit', to: 'artists#destroy'
 end

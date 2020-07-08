@@ -212,12 +212,31 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/kathybui/turing/2-mod/exercises/mix_master/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/kathybui/turing/2-mod/exercises/mix_master/spec/features/artists/destroy_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -309,31 +328,36 @@
         "lines": [
           1,
           1,
+          5,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
           4,
           null,
           null,
           1,
-          null,
-          null,
-          1,
-          2,
-          2,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
           1,
           null,
           null,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           1,
@@ -354,6 +378,6 @@
         ]
       }
     },
-    "timestamp": 1594236721
+    "timestamp": 1594237330
   }
 }
