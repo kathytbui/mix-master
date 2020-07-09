@@ -6,4 +6,9 @@
     <%=  link_to "Delete", "/artists/#{@artist.id}/edit", method: :delete %>
     <%=  link_to "New song", "/artists/#{@artist.id}/songs/new"%>
   </article>
+  <article class="">
+    <% @artist.songs.each do |song| %>
+      <%= song.title %>
+    <% end %>
+  </article>
 </section>

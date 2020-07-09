@@ -3,7 +3,10 @@
 <section>
   <article class="">
     <p>
-      <%= link_to @artist.name, "/artists/#{@song.artist_id}" %>
+      <%= link_to "#{@artist.name}", "/artists/#{@song.artist_id}" %>
+    </p>
+    <p>
+      <%= link_to "Edit #{@song.title}", "/songs/#{@song.id}/edit" %>
     </p>
   </article>
 </section>

@@ -1,0 +1,8 @@
+<h1>Edit <%= @song.title %> </h1>
+
+<%= form_tag "/songs/#{@song.id}", method: :patch do %>
+<%= label_tag :title %>
+<%= text_field_tag :title, @song.title %>
+
+<%= submit_tag "Update Song" %> <%= button_to "Cancel", :back %>
+<% end %>

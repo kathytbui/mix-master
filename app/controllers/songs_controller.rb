@@ -1,5 +1,9 @@
 class SongsController < ApplicationController
 
+  def index
+    @songs = Song.all
+  end
+
   def new
     @artist = Artist.find(params[:id])
     @song = @artist.songs.new
@@ -19,6 +23,16 @@ class SongsController < ApplicationController
   def show
     @song = Song.find(params[:id])
     @artist = Artist.find(@song.artist_id)
+  end
+
+  def edit
+    @song = Song.find(params[:id])
+  end
+
+  def update
+    @song = Song.find(params[:id])
+    @song.update(song_params)
+    redirect_to "/songs/#{@song.id}"
   end
 
   private
