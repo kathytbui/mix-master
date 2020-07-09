@@ -1,0 +1,9 @@
+<h1><%= @song.title %></h1>
+
+<section>
+  <article class="">
+    <p>
+      <%= link_to @artist.name, "/artists/#{@song.artist_id}" %>
+    </p>
+  </article>
+</section>
