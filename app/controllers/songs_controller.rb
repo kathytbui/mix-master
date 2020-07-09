@@ -8,7 +8,12 @@ class SongsController < ApplicationController
   def create
     artist = Artist.find(params[:id])
     new_song = artist.songs.create(song_params)
-    redirect_to("/songs/#{new_song.id}")
+    if new_song.save
+      redirect_to("/songs/#{new_song.id}")
+    else
+      redirect_to "/artists/#{artist.id}/songs/new"
+      flash[:notice] = "Title cannot be blank"
+    end
   end
 
   def show

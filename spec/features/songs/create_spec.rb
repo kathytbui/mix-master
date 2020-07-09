@@ -18,4 +18,17 @@ RSpec.describe "Create a song feature" do
     click_on @blink.name
     expect(current_path).to eq("/artists/#{@blink.id}")
   end
+
+  it "cannot create a new song if information is missing" do
+    title = "I miss you"
+    visit "/artists/#{@blink.id}"
+    expect(page).to_not have_content(title)
+    click_on "New song"
+    expect(current_path).to eq("/artists/#{@blink.id}/songs/new")
+    fill_in :title, with: ""
+    click_on "Create Song"
+    expect(current_path).to eq("/artists/#{@blink.id}/songs/new")
+    expect(page).to_not have_link(@blink.name)
+    expect(page).to have_content("Title cannot be blank")
+  end
 end
