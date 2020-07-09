@@ -1,4 +1,4 @@
-<h1>Add a song to <%= %>'s list!</h1>
+<h1>Add a song to <%= @artist.name%>'s list!</h1>
 
 <%= form_tag "/artists/#{@artist.id}/songs", method: :post do %>
 <%= label_tag :title %>
