@@ -4,5 +4,6 @@
     <p><%= image_tag @artist.image_path, alt: @artist.name %></p>
     <%=  link_to "Edit", "/artists/#{@artist.id}/edit"%>
     <%=  link_to "Delete", "/artists/#{@artist.id}/edit", method: :delete %>
+    <%=  link_to "New song", "/artists/#{@artist.id}/songs/new"%>
   </article>
 </section>

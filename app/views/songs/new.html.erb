@@ -1,0 +1,8 @@
+<h1>Add a song to <%= %>'s list!</h1>
+
+<%= form_tag "/artists/#{@artist.id}/songs", method: :post do %>
+<%= label_tag :title %>
+<%= text_field_tag :title %>
+
+<%= submit_tag "Create Song" %> <%= button_to "Cancel", :back %>
+<% end %>
