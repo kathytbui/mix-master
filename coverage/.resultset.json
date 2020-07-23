@@ -220,14 +220,60 @@
           1,
           1,
           1,
-          null,
-          null,
+          1,
           null
         ]
       },
       "/Users/kathybui/turing/2-mod/exercises/mix_master/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/kathybui/turing/2-mod/exercises/mix_master/spec/features/artists/create_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -370,7 +416,16 @@
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -471,6 +526,7 @@
           null,
           1,
           8,
+          8,
           null,
           null,
           1,
@@ -548,8 +604,19 @@
           null,
           null
         ]
+      },
+      "/Users/kathybui/turing/2-mod/exercises/mix_master/app/controllers/artist_songs_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1594276100
+    "timestamp": 1594963538
   }
 }

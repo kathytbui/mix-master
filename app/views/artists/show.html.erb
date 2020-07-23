@@ -7,7 +7,7 @@
     <%=  link_to "New song", "/artists/#{@artist.id}/songs/new"%>
   </article>
   <article class="">
-    <% @artist.songs.each do |song| %>
+    <% @songs.each do |song| %>
       <%= song.title %>
     <% end %>
     <%= link_to "View Songs", "/artists/#{@artist.id}/songs/" %>
